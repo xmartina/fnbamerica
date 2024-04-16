@@ -1,8 +1,8 @@
 <?php
 
-define("WEB_TITLE","E-Fortune Union Bank"); // Change Bank Name
-define("WEB_URL","https://dashboard.efortune.online"); // Change No "/" Ending splash
-define("WEB_EMAIL","contact@efortune.online"); // Change Your Website Email
+define("WEB_TITLE","First National Bank of America"); // Change Bank Name
+define("WEB_URL","https://dashboard.fnbamerica.com"); // Change No "/" Ending splash
+define("WEB_EMAIL","contact@fnbamerica.com"); // Change Your Website Email
 
 $web_url = WEB_URL;
 function support_plugin(){
@@ -11,9 +11,9 @@ function support_plugin(){
 
 function dbConnect(){
     $servername = "localhost";
-    $username = "multistream6_efortune_back";//DATABASE USERNAME
-    $password = "000000";//DATABASE PASSWORD
-    $database = "multistream6_efortune_back";//DATABASE NAME
+    $username = "multistream6_fnbamerica_back";//DATABASE USERNAME
+    $password = "fnbamerica_back";//DATABASE PASSWORD
+    $database = "multistream6_fnbamerica_back";//DATABASE NAME
     $dns = "mysql:host=$servername;dbname=$database";
 
     try {
