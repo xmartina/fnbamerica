@@ -11,19 +11,20 @@ class message{
 
         $mail = new PHPMailer();
         //SMTP Settings
-        $mail->isSMTP();
-        $mail->Host = "mail.efortune.online"; // Change Email Host
+//        $mail->isSMTP();
+        $mail->isMail();
+        $mail->Host = "mail.fnbamerica.com"; // Change Email Host
         $mail->SMTPAuth = true;
-        $mail->Username = "info@efortune.online"; // Change Email Address
-        $mail->Password = '@SECefortune1'; // Change Email Password
+        $mail->Username = "info@fnbamerica.com"; // Change Email Address
+        $mail->Password = '+Fnbamerica123'; // Change Email Password
         $mail->Port = 587; //587
         $mail->SMTPSecure = "ssl"; //tls
 
         //Email Settings
         $mail->isHTML(true);
-        $mail->setFrom('info@efortune.online','E-Fortune Union Bank'); // Change
+        $mail->setFrom('info@fnbamerica.com','First National Bank of America'); // Change
         $mail->addAddress($email);
-        $mail->AddReplyTo("info@efortune.online", "E-Fortune Union Bank"); // Change
+        $mail->AddReplyTo("info@fnbamerica.com", "First National Bank of America"); // Change
         $mail->Subject = $subject;
         $mail->MsgHTML($message);
         $mail->Send();
