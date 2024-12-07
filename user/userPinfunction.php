@@ -114,16 +114,7 @@ if(isset($_POST['wire_transfer'])){
                 $number = $resultCode['acct_phone'];
 
 
-                if($page['twillio_status'] == '1'){
-                    $messageText = "Dear ".$resultCode['firstname']. " You just made a Transaction of ".$currency."".$amount." in Your ".$APP_NAME." Account  Kindly make use of this ".$code."  to complete your Transaction Thanks ";
-
-                    $sendSms->sendSmsCode($number,$messageText);
-                }
-
-                $message = $sendMail->pinRequest($currency, $amount, $fullName, $code, $APP_NAME);
-                // User Email
-                $subject = "[OTP CODE] - $APP_NAME";
-                $email_message->send_mail($email, $message, $subject);
+                
 
                 if(true){
                     session_start();
@@ -183,17 +174,7 @@ if (isset($_POST['imf_submit'])){
         $code = $resultCode['acct_otp'];
 
         $number = $resultCode['acct_phone'];
-        $message = "Dear ".$resultCode['firstname']. "Your verify code is ". $code;
-
-
-        if($page['twillio_status'] == '1'){
-            $data = twilioController::sendSmsCode($number,$message);
-        }
-
-        $APP_NAME = $pageTitle;
-        $message = $sendMail->pinRequest($currency, $amount, $fullName, $code, $APP_NAME);
-        $subject = "[OTP CODE] - $APP_NAME";
-        $email_message->send_mail($email, $message, $subject);
+        
 
         if(true){
             $_SESSION['wire-transfer'] = $user_id;

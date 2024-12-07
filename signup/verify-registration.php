@@ -1,7 +1,10 @@
 <?php
 //error_reporting(E_ALL);
 //ini_set('display_errors', 1);
+const rootDir = '/home/multistream6/domains/dashboard.rsfcorporation.com/public_html/';
 require '../include/vendor/autoload.php';
+require rootDir . 'include/vendor/autoload.php';
+
 $pageName  = "Registration";
 require_once './layout/header.php';
 

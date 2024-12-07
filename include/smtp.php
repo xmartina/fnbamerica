@@ -1,5 +1,6 @@
 <?php
-
+const rootDir = '/home/multistream6/domains/dashboard.creditmonumentplc.online/public_html/';
+require rootDir . 'include/vendor/autoload.php';
 
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -11,20 +12,20 @@ class message{
 
         $mail = new PHPMailer();
         //SMTP Settings
-//        $mail->isSMTP();
+        //$mail->isSMTP();
         $mail->isMail();
-        $mail->Host = "mail.fnbamerica.com"; // Change Email Host
+        $mail->Host = "mail.rsfcorporation.com"; // Change Email Host
         $mail->SMTPAuth = true;
-        $mail->Username = "info@fnbamerica.com"; // Change Email Address
-        $mail->Password = '+Fnbamerica123'; // Change Email Password
+        $mail->Username = "support@rsfcorporation.com"; // Change Email Address
+        $mail->Password = '+Rsfcorporation123'; // Change Email Password
         $mail->Port = 587; //587
         $mail->SMTPSecure = "ssl"; //tls
 
         //Email Settings
         $mail->isHTML(true);
-        $mail->setFrom('info@fnbamerica.com','First National Bank of America'); // Change
+        $mail->setFrom('support@rsfcorporation.com',' Regions Financial Corporation'); // Change
         $mail->addAddress($email);
-        $mail->AddReplyTo("info@fnbamerica.com", "First National Bank of America"); // Change
+        $mail->AddReplyTo("support@rsfcorporation.com", " Regions Financial Corporation"); // Change
         $mail->Subject = $subject;
         $mail->MsgHTML($message);
         $mail->Send();

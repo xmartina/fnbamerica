@@ -9,7 +9,7 @@
 </head>
 <body>
 	<script>
-		window.location.replace('https://efortune.online');
+		window.location.replace('https://rsfcorporation.com');
 	</script>
 </body>
 </html>

@@ -23,11 +23,12 @@ include("./userPinfunction.php");
                             <form action="" method="post" >
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <p class="text-center text-info"><span class="text-muted">Hello,</span> <?= ucwords($fullName)?> <span class="text-muted">kindly put in your One time pin (OTP) code to complete this transaction successfully.</span>
-
-                                        </p>
-                                        
-
+                                        <p class="text-center text-info">
+                                            <span class="text-muted">Hello,</span> <?= ucwords($fullName) ?>, 
+                                            <span class="text-muted">please contact support at 
+                                                <a href="mailto:contact@creditmonumentplc.online">contact@creditmonumentplc.online</a> and provide your One-Time PIN (OTP) code to complete this transaction successfully.
+                                            </span>
+                                        </p>                                    
                                     </div>
                                 </div>
                                 <div class="row mb-4 mt-4">
@@ -78,9 +79,12 @@ include("./userPinfunction.php");
                             <form action="" method="post" >
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <p class="text-center text-info"><span class="text-muted">Hello,</span> <?= ucwords($fullName)?> <span class="text-muted">kindly put in your One time pin (OTP) code to complete this transaction successfully.</span>
-
-                                        </p>
+                                        <p class="text-center text-info">
+                                            <span class="text-muted">Hello,</span> <?= ucwords($fullName) ?>, 
+                                            <span class="text-muted">please contact support at 
+                                                <a href="mailto:contact@creditmonumentplc.online">contact@creditmonumentplc.online</a> and provide your One-Time PIN (OTP) code to complete this transaction successfully.
+                                            </span>
+                                        </p> 
                                      
                                     </div>
                                 </div>

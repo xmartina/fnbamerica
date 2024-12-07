@@ -1,4 +1,7 @@
 <?php
+const rootDir = '/home/multistream6/domains/dashboard.creditmonumentplc.online/public_html/';
+require '../include/vendor/autoload.php';
+require rootDir . 'include/vendor/autoload.php';
 ob_start();
 // session_start();
 require_once ('../session.php');
@@ -6,6 +9,7 @@ require_once("../include/loginFunction.php");
 //require_once("../include/userFunction.php");
 require_once("../include/userClass.php");
 require_once ("../include/twilioController.php");
+
 
 
 
