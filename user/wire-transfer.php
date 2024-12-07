@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 $pageName = "Wire Transfer";
 include_once("layouts/header.php");
-require_once("userPinfunction.php");
+require_once("userPinfunction_2.php");
 
 ?>
 
